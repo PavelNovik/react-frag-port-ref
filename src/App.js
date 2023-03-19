@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import CreateUser from "./components/Users/CreateUser";
-import UserList from "./components/Users/UserList";
+import React, { useState } from 'react';
+import CreateUser from './components/Users/CreateUser';
+import UserList from './components/Users/UserList';
 
 const App = () => {
   const [userList, setUserList] = useState([]);
@@ -15,10 +15,10 @@ const App = () => {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <CreateUser onCreateUser={createUserHandler} />
       <UserList users={userList} />
-    </div>
+    </React.Fragment>
   );
 };
 
